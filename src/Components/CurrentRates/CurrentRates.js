@@ -35,14 +35,15 @@ const CurrentRates = () => {
 
     return (
         <Box display="flex" alignContent="center" flexDirection="column">
-            <Button variant="outlined" 
-            style={{color:'green'}}
-            color="secondary"
-            >
-                Exchange Rates
-            </Button>
             <Paper elevation={10}>
-                <Box padding={3} mb={2} maxHeight={400} minWidth={250} overflow="auto" className={classes.demo}>
+                <Button variant="outlined"
+                    style={{ color: 'green' }}
+                    color="secondary"
+                    fullWidth
+                >
+                    Exchange Rates
+                </Button>
+                <Box padding={3} mb={2} mt={1} maxHeight={400} minWidth={250} overflow="auto" className={classes.demo}>
                     <List>
                         {
                             Object.keys(selCountryData).map((key) => (
