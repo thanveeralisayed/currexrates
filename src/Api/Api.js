@@ -1,0 +1,1 @@
+export const getallrates = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/2020-11-24/currencies/inr.json`
